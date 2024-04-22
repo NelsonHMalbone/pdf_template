@@ -1,6 +1,10 @@
 from fpdf import FPDF
+import pandas as pd
 
 pdf  = FPDF(orientation='p', unit='mm', format='a4')
+# loading csv in a pandas data frame
+df = pd.read_csv('topics.csv')
+# print(df) to make sure data got loaded correctly
 
 pdf.add_page()
 # leave blank till output is made
