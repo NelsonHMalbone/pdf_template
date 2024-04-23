@@ -13,7 +13,10 @@ for index, row in df.iterrows():
     # this is a painful way of adding a line you just have more control of line placement
     pdf.line(10, 28, 200, 28)
 
-
+    for i in range(row['Pages'] - 1):
+        pdf.add_page()
+        # third page came from the first pdf.add_page inside the first for loop.
+        # to solve just add a - 1 like above
 
 # leave blank till output is made
 # just learning about the FPDF
