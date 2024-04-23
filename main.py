@@ -8,6 +8,7 @@ pdf.set_auto_page_break(auto=False, margin=0)
 df = pd.read_csv('topics.csv')
 # print(df) to make sure data got loaded correctly
 for index, row in df.iterrows():
+    # sets the header
     pdf.add_page()  # parent page
     pdf.set_font(family='Times', style='B', size=24)
     # border= 'B' does the same thing
