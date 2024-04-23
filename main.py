@@ -36,7 +36,7 @@ for index, row in df.iterrows():
 # just learning about the FPDF
 # pdf.add_page()
 # pdf.set_font(family='Times', size=12)
-# pdf.cell(w=0, h=12, txt="Hello", align='L', ln=1, border=1)
+# ge
 # pdf.set_font(family='Times', style='B', size=12)
 # pdf.cell(w=0, h=12, txt="hi there", align='L', ln=1, border=1)
 
